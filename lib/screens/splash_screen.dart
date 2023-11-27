@@ -1,7 +1,11 @@
 import 'package:animated_splash_screen/animated_splash_screen.dart';
-import 'package:club_members_management_system/screens/home_page.dart';
+import 'package:club_members_management_system/admin/admin_landing_page.dart';
+import 'package:club_members_management_system/screens/auth/login.dart';
+import 'package:club_members_management_system/screens/landing_page.dart';
 import 'package:flutter/material.dart';
 import 'package:page_transition/page_transition.dart';
+
+import '../shared_preferance/shared_preference.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({Key? key}) : super(key: key);
@@ -11,6 +15,16 @@ class SplashScreen extends StatefulWidget {
 }
 
 class _SplashScreenState extends State<SplashScreen> {
+  late bool isLoggedIn;
+  late bool isAdmin;
+  @override
+  void initState() {
+    isLoggedIn = UserPreferences.getLogin() ?? false;
+    isAdmin = UserPreferences.getRole() ?? false;
+
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -26,7 +40,11 @@ class _SplashScreenState extends State<SplashScreen> {
         backgroundColor: Colors.black,
         // Colors.white,
         pageTransitionType: PageTransitionType.fade,
-        nextScreen: const HomePage(),
+        nextScreen: isLoggedIn
+            ? isAdmin
+                ? const AdminLanding()
+                : const Landing()
+            : const LogIn(),
       ),
     );
   }

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1011165073367",
+    "project_id": "club-members-management-system",
+    "storage_bucket": "club-members-management-system.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1011165073367:android:a5e5a6ca3683829561c592",
+        "android_client_info": {
+          "package_name": "com.example.club_members_management_system"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfaJlFKnkc3Nh5ptPow_PtT6MafJgh6aE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

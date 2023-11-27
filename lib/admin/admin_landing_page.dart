@@ -1,27 +1,23 @@
-import 'package:club_members_management_system/screens/pages/account_page.dart';
-import 'package:club_members_management_system/screens/pages/contact_page.dart';
+import 'package:club_members_management_system/admin/post_event.dart';
+import 'package:club_members_management_system/admin/report_page.dart';
 import 'package:club_members_management_system/screens/pages/home_page.dart';
-import 'package:club_members_management_system/screens/pages/practice_page.dart';
-import 'package:club_members_management_system/screens/pages/todo_page.dart';
 import 'package:flutter/material.dart';
 
-class Landing extends StatefulWidget {
-  const Landing({Key? key}) : super(key: key);
+class AdminLanding extends StatefulWidget {
+  const AdminLanding({Key? key}) : super(key: key);
 
   @override
-  State<Landing> createState() => _LandingState();
+  State<AdminLanding> createState() => _AdminLandingState();
 }
 
-class _LandingState extends State<Landing> {
+class _AdminLandingState extends State<AdminLanding> {
   int currentTab = 0;
   Color kActiveColor = const Color(0xff53E88B);
 
   final List<Widget> screens = [
     const HomePage(),
-    const ParcticePage(),
-    const TodoPage(),
-    const ChatPage(),
-    const AccountPage(),
+    const PostEvent(),
+    const ReportPage(),
   ];
 
   final PageStorageBucket bucket = PageStorageBucket();
@@ -43,10 +39,10 @@ class _LandingState extends State<Landing> {
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           setState(() {
-            currentTab = 2;
+            currentTab = 1;
           });
         },
-        tooltip: "Add Task",
+        tooltip: "Add Event",
         elevation: 0,
         backgroundColor: Colors.transparent,
         foregroundColor: Colors.white,
@@ -81,12 +77,6 @@ class _LandingState extends State<Landing> {
                   label: "Home",
                 ),
                 BottomNavigationBarItem(
-                  activeIcon: Icon(Icons.computer_rounded),
-                  icon: Opacity(
-                      opacity: 0.25, child: Icon(Icons.computer_rounded)),
-                  label: "Practice",
-                ),
-                BottomNavigationBarItem(
                   icon: Icon(
                     Icons.add,
                     color: Colors.transparent,
@@ -94,19 +84,9 @@ class _LandingState extends State<Landing> {
                   label: "Add Task",
                 ),
                 BottomNavigationBarItem(
-                  activeIcon: Icon(Icons.live_help_outlined),
-                  icon: Opacity(
-                    opacity: 0.25,
-                    child: Icon(Icons.live_help_outlined),
-                  ),
-                  label: "Contact Us",
-                ),
-                BottomNavigationBarItem(
-                  activeIcon: Icon(Icons.account_circle_outlined),
-                  icon: Opacity(
-                      opacity: 0.25,
-                      child: Icon(Icons.account_circle_outlined)),
-                  label: "Profile",
+                  activeIcon: Icon(Icons.settings),
+                  icon: Opacity(opacity: 0.25, child: Icon(Icons.settings)),
+                  label: "Setting",
                 ),
               ])),
     );
