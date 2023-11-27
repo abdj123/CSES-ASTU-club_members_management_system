@@ -1,16 +1,52 @@
-# club_members_management_system
+# CSEC-ASTU Club Members Management System
 
-A new Flutter project.
+Welcome to the Student Club Members Management System repository! This Flutter application is designed to streamline club management, providing features for both administrators and regular members. Here's a guide on how to run and use the app.
+How to Run the App
+Prerequisites
 
-## Getting Started
+    Flutter installed on your machine.
+    An Android/iOS emulator or a physical device connected to your machine.
 
-This project is a starting point for a Flutter application.
+## Steps
 
-A few resources to get you started if this is your first Flutter project:
+Clone the repository to your local machine:
+    bash: git clone https://github.com/your-username/club-members-management-system.git
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Navigate to the project directory:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+    bash: cd club-members-management-system
+
+Get dependencies by running:
+
+    bash: flutter pub get
+
+Run the app on your preferred emulator or device:
+
+    bash: flutter run
+
+## How to Use the App
+### Login as Admin
+
+#### To access admin features, use the following login credentials:
+
+    Email: admin@gmail.com
+    Password: 12345678
+
+#### App Functionalities
+
+     Admin Features:
+        Post, edit, and delete events.
+        Generate insightful reports.
+
+    User Features:
+        View upcoming events.
+        Add events to Google Calendar.
+        Manage daily tasks with a to-do list.
+        Access a competitive programming page.
+
+#### Changing Password
+
+  Both admins and users can change their passwords securely within the app.
+  Feedback and Contribution
+
+Feel free to submit issues or contribute to the development of this project. Your feedback and contributions are highly appreciated!
