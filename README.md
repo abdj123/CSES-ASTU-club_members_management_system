@@ -1,6 +1,7 @@
 # CSEC-ASTU Club Members Management System
 
-Welcome to the Student Club Members Management System repository! This Flutter application is designed to streamline club management, providing features for both administrators and regular members. Here's a guide on how to run and use the app.
+Welcome to the Student Club Members Management System repository! This Flutter application is designed to streamline club management, providing features for both administrators and regular members. 
+Here's a guide on how to run and use the app.
 How to Run the App
 Prerequisites
 
@@ -10,7 +11,7 @@ Prerequisites
 ## Steps
 
 Clone the repository to your local machine:
-    bash: git clone https://github.com/your-username/club-members-management-system.git
+    bash: git clone https://github.com/abdj123/CSES-ASTU-club_members_management_system.git
 
 Navigate to the project directory:
 
