@@ -203,7 +203,7 @@ class _EditEventState extends State<EditEvent> {
                         changed['description'] = descriptionController.text;
                       }
                       if (timeController.text != initTime) {
-                        changed['time'] = initTime;
+                        changed['time'] = timeController.text;
                       }
                       if (locationController.text != initLocatoion) {
                         changed['location'] = locationController.text;
