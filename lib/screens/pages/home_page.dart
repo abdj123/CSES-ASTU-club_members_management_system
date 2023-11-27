@@ -26,12 +26,12 @@ class _HomePageState extends State<HomePage> {
   Future<void> _initPreferences() async {
     _prefs = await SharedPreferences.getInstance();
     task = _prefs.getStringList(
-        'tasks_${DateTime.now().year}_${DateTime.now().month}_${DateTime.now().day}');
-    print(task);
+            'tasks_${DateTime.now().year}_${DateTime.now().month}_${DateTime.now().day}') ??
+        [];
   }
 
   late SharedPreferences _prefs;
-  late List<String>? task = [];
+  late List<String> task = [];
 
   @override
   void initState() {
@@ -144,13 +144,11 @@ class _HomePageState extends State<HomePage> {
                           borderRadius:
                               const BorderRadius.all(Radius.circular(15)),
                           color: Colors.grey[400]),
-                      child: task!.isEmpty
-                          ? const Center(
-                              child: CircularProgressIndicator(),
-                            )
+                      child: task.isEmpty
+                          ? const Center(child: Text("no Tasks"))
                           : Center(
                               child: Text(
-                              task!.last,
+                              task.last,
                               style: const TextStyle(
                                   color: Colors.white,
                                   fontSize: 16,
