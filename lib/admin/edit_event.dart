@@ -203,7 +203,7 @@ class _EditEventState extends State<EditEvent> {
                         changed['description'] = descriptionController.text;
                       }
                       if (timeController.text != initTime) {
-                        changed['time'] = initTime;
+                        changed['time'] = timeController.text;
                       }
                       if (locationController.text != initLocatoion) {
                         changed['location'] = locationController.text;
@@ -261,12 +261,6 @@ class _EditEventState extends State<EditEvent> {
                           duration: const Duration(seconds: 5),
                         ).show(context);
                       });
-
-                      // titleController.clear();
-                      // descriptionController.clear();
-                      // locationController.clear();
-                      // timeController.clear();
-                      // compressedFile = null;
                     },
                     child: Padding(
                       padding: const EdgeInsets.only(

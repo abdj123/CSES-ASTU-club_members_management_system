@@ -29,7 +29,7 @@ class _SplashScreenState extends State<SplashScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: AnimatedSplashScreen(
-        splash: Image.asset("assets/csec.png",
+        splash: Image.asset("assets/csec.jpg",
             height: MediaQuery.sizeOf(context).height / 3,
             width: MediaQuery.sizeOf(context).width / 2),
         duration: 3000,

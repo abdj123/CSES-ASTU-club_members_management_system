@@ -1,4 +1,5 @@
 import 'package:club_members_management_system/provider/event_provider.dart';
+import 'package:club_members_management_system/screens/auth/phoneOTPVerification.dart';
 import 'package:club_members_management_system/screens/splash_screen.dart';
 import 'package:club_members_management_system/shared_preferance/shared_preference.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -33,7 +34,10 @@ class _MyAppState extends State<MyApp> {
         ),
       ],
       child: const MaterialApp(
-          debugShowCheckedModeBanner: false, home: SplashScreen()),
+          debugShowCheckedModeBanner: false,
+          home:
+              // PhoneOTPVerification()
+              SplashScreen()),
     );
   }
 }

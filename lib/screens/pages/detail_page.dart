@@ -115,7 +115,7 @@ class _DiscriptionState extends State<Discription> {
                         height: 280,
                         fit: BoxFit.cover,
                         width: double.infinity,
-                        placeholder: const AssetImage("assets/csec.png"),
+                        placeholder: const AssetImage("assets/csec.jpg"),
                         image: NetworkImage(
                           item.image,
                         ),

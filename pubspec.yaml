@@ -48,7 +48,7 @@ dependencies:
   firebase_storage: ^11.5.2
   provider: ^6.1.1
   url_launcher: ^6.1.14
-  add_2_calendar: ^2.2.5
+  add_2_calendar: ^3.0.1
   pie_chart: ^5.4.0
 
 

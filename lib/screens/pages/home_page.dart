@@ -50,7 +50,7 @@ class _HomePageState extends State<HomePage> {
           backgroundColor: Colors.black,
           automaticallyImplyLeading: false,
           title: Image.asset(
-            "assets/csec.png",
+            "assets/csec.jpg",
             width: 65,
             height: 45,
           )),
@@ -213,7 +213,7 @@ class _HomePageState extends State<HomePage> {
                                           fit: BoxFit.cover,
                                           width: double.infinity,
                                           placeholder: const AssetImage(
-                                              "assets/csec.png"),
+                                              "assets/csec.jpg"),
                                           image: NetworkImage(
                                             item.image,
                                           ),
